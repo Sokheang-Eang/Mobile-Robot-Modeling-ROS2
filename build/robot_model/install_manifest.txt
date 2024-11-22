@@ -1,0 +1,17 @@
+/home/astrox/robot_model/install/robot_model/lib/robot_model/holonomic
+/home/astrox/robot_model/install/robot_model/lib/robot_model/non_holonomic
+/home/astrox/robot_model/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model
+/home/astrox/robot_model/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model
+/home/astrox/robot_model/install/robot_model/share/robot_model/environment/ament_prefix_path.sh
+/home/astrox/robot_model/install/robot_model/share/robot_model/environment/ament_prefix_path.dsv
+/home/astrox/robot_model/install/robot_model/share/robot_model/environment/path.sh
+/home/astrox/robot_model/install/robot_model/share/robot_model/environment/path.dsv
+/home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.bash
+/home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.sh
+/home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.zsh
+/home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.dsv
+/home/astrox/robot_model/install/robot_model/share/robot_model/package.dsv
+/home/astrox/robot_model/install/robot_model/share/ament_index/resource_index/packages/robot_model
+/home/astrox/robot_model/install/robot_model/share/robot_model/cmake/robot_modelConfig.cmake
+/home/astrox/robot_model/install/robot_model/share/robot_model/cmake/robot_modelConfig-version.cmake
+/home/astrox/robot_model/install/robot_model/share/robot_model/package.xml

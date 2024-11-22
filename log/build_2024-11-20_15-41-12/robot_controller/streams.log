@@ -1,0 +1,48 @@
+[0.013s] Invoking command in '/home/astrox/robot_model/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12
+[0.034s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.220s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.285s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.305s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.332s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.358s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.461s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.467s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.566s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.583s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.602s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.699s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.769s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.854s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.854s] -- Configured cppcheck include dirs: 
+[0.854s] -- Configured cppcheck exclude dirs and/or files: 
+[0.855s] -- Added test 'lint_cmake' to check CMake code style
+[0.856s] -- Added test 'uncrustify' to check C / C++ code style
+[0.856s] -- Configured uncrustify additional arguments: 
+[0.857s] -- Added test 'xmllint' to check XML markup files
+[0.858s] -- Configuring done (0.8s)
+[0.873s] -- Generating done (0.0s)
+[0.874s] -- Build files have been written to: /home/astrox/robot_model/build/robot_controller
+[0.902s] [ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[8.218s] [100%] [32m[1mLinking CXX executable ps2_controller[0m
+[8.444s] [100%] Built target ps2_controller
+[8.452s] Invoked command in '/home/astrox/robot_model/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12
+[8.470s] Invoking command in '/home/astrox/robot_model/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/astrox/robot_model/build/robot_controller
+[8.477s] -- Install configuration: ""
+[8.477s] -- Installing: /home/astrox/robot_model/install/robot_controller/lib/robot_controller/ps2_controller
+[8.479s] -- Set non-toolchain portion of runtime path of "/home/astrox/robot_model/install/robot_controller/lib/robot_controller/ps2_controller" to ""
+[8.479s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+[8.479s] -- Installing: /home/astrox/robot_model/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+[8.479s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/path.sh
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/path.dsv
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.bash
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.sh
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.zsh
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.dsv
+[8.480s] -- Installing: /home/astrox/robot_model/install/robot_controller/share/robot_controller/package.dsv
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+[8.480s] -- Up-to-date: /home/astrox/robot_model/install/robot_controller/share/robot_controller/package.xml
+[8.481s] Invoked command in '/home/astrox/robot_model/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/astrox/robot_model/build/robot_controller

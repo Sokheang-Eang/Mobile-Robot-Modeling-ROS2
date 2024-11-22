@@ -1,0 +1,14 @@
+[0.010s] Invoking command in '/home/astrox/robot_model/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_model -- -j12 -l12
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/holonomic.dir/src/holonomic.cpp.o[0m
+[2.482s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:[m[K In constructor ‘[01m[KOdometryPublisher::[01;32m[KOdometryPublisher[m[K()[m[K’:
+[2.482s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_read_speed[m[K’ was not declared in this scope
+[2.482s]    21 |         [01;31m[K_read_speed[m[K = this->create_subscription<geometry_msgs::msg::Twist>("peed/holonomic", 10, std::bind(&OdometryPublisher::callback_holonomic, this, std::placeholders::_1));
+[2.482s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.503s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:[m[K In member function ‘[01m[Kvoid OdometryPublisher::[01;32m[Kpublish[m[K()[m[K’:
+[2.504s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:44:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_theta[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_time[m[K’?
+[2.504s]    44 |         linear_x = vx_ * cos([01;31m[Kcurrent_theta[m[K) - vy_ * sin(current_theta);
+[2.504s]       |                              [01;31m[K^~~~~~~~~~~~~[m[K
+[2.504s]       |                              [32m[Kcurrent_time[m[K
+[4.876s] gmake[2]: *** [CMakeFiles/holonomic.dir/build.make:76: CMakeFiles/holonomic.dir/src/holonomic.cpp.o] Error 1
+[4.876s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/holonomic.dir/all] Error 2
+[4.876s] gmake: *** [Makefile:146: all] Error 2

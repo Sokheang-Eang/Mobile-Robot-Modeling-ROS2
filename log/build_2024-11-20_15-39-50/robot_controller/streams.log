@@ -1,0 +1,12 @@
+[0.016s] Invoking command in '/home/astrox/robot_model/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12
+[0.054s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.253s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.253s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[0.253s]   before
+[0.253s] Call Stack (most recent call first):
+[0.253s]   CMakeLists.txt:14 (ament_target_dependencies)
+[0.253s] 
+[0.253s] [0m
+[0.254s] -- Configuring incomplete, errors occurred!
+[0.255s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.256s] Invoked command in '/home/astrox/robot_model/build/robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20241120-0858-Experimental"
+	Name="astrox"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="13.2.0"
+	OSName="Linux"
+	Hostname="astrox"
+	OSRelease="6.8.0-48-generic"
+	OSVersion="#48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="165"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="15752"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4199.5"
+	>
+	<Testing>
+		<StartDateTime>Nov 20 15:58 +07</StartDateTime>
+		<StartTestTime>1732093107</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 20 15:58 +07</EndDateTime>
+		<EndTestTime>1732093107</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

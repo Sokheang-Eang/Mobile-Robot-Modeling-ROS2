@@ -1,0 +1,43 @@
+[0.009s] Invoking command in '/home/astrox/robot_model/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_model -- -j12 -l12
+[0.029s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.209s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.257s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.272s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.290s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.358s] -- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.402s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[0.409s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.521s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.526s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.596s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.613s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.632s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.811s] -- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.832s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.834s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.834s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.839s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.917s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.917s] -- Configured cppcheck include dirs: 
+[0.917s] -- Configured cppcheck exclude dirs and/or files: 
+[0.918s] -- Added test 'lint_cmake' to check CMake code style
+[0.918s] -- Added test 'uncrustify' to check C / C++ code style
+[0.918s] -- Configured uncrustify additional arguments: 
+[0.919s] -- Added test 'xmllint' to check XML markup files
+[0.920s] -- Configuring done (0.9s)
+[0.935s] -- Generating done (0.0s)
+[0.936s] -- Build files have been written to: /home/astrox/robot_model/build/robot_model
+[0.968s] [ 50%] [32mBuilding CXX object CMakeFiles/holonomic.dir/src/holonomic.cpp.o[0m
+[3.238s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:[m[K In constructor ‘[01m[KOdometryPublisher::[01;32m[KOdometryPublisher[m[K()[m[K’:
+[3.238s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_read_speed[m[K’ was not declared in this scope
+[3.238s]    21 |         [01;31m[K_read_speed[m[K = this->create_subscription<geometry_msgs::msg::Twist>("peed/holonomic", 10, std::bind(&OdometryPublisher::callback_holonomic, this, std::placeholders::_1));
+[3.239s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[3.259s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:[m[K In member function ‘[01m[Kvoid OdometryPublisher::[01;32m[Kpublish[m[K()[m[K’:
+[3.259s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:44:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_theta[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_time[m[K’?
+[3.259s]    44 |         linear_x = vx_ * cos([01;31m[Kcurrent_theta[m[K) - vy_ * sin(current_theta);
+[3.259s]       |                              [01;31m[K^~~~~~~~~~~~~[m[K
+[3.259s]       |                              [32m[Kcurrent_time[m[K
+[5.500s] gmake[2]: *** [CMakeFiles/holonomic.dir/build.make:76: CMakeFiles/holonomic.dir/src/holonomic.cpp.o] Error 1
+[5.500s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/holonomic.dir/all] Error 2
+[5.500s] gmake: *** [Makefile:146: all] Error 2

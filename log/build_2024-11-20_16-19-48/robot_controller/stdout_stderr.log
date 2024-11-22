@@ -1,0 +1,68 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:34:42:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble axes_1[m[K’
+   34 |     void _holonomic(double axes_1,[01;31m[Kdouble axes_1[m[K)
+      |                                   [01;31m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:34:28:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble axes_1[m[K’ previously declared here
+   34 |     void _holonomic([01;36m[Kdouble axes_1[m[K,double axes_1)
+      |                     [01;36m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In constructor ‘[01m[KJoyReader::[01;32m[KJoyReader[m[K()[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:15:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid JoyReader::[01;32m[K_non_holonomic[m[K(double, double)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   15 |         [01;31m[K_non_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/non_holonomic", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:17:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid JoyReader::[01;32m[K_holonomic[m[K(...)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   17 |         [01;31m[K_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/holonomic", 10);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |                   [32m[K()[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   19 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&JoyReader::_non_holonomic, this));
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:19[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:1[m[K:
+/usr/include/c++/13/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (JoyReader::*)(double, double), JoyReader*>[m[K’:
+[01m[K/usr/include/c++/13/functional:859:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (JoyReader::*)(double, double), JoyReader*>[m[K’
+[01m[K/usr/include/c++/13/functional:881:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::[01;32m[Kbind[m[K(_Func&&, _BoundArgs&& ...) [35m[K[with _Func = void (JoyReader::*)(double, double); _BoundArgs = {JoyReader*}][m[K[m[K’
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:19:82:[m[K   required from here
+[01m[K/usr/include/c++/13/functional:847:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+  846 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+      |                               [01;31m[K~~~~~[m[K
+  847 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  848 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/functional:847:21:[m[K [01;36m[Knote: [m[K‘[01m[K(false ? (1 >= (((long unsigned int)std::integral_constant<long unsigned int, 2>::value) + 1)) : (1 == (((long unsigned int)std::integral_constant<long unsigned int, 2>::value) + 1)))[m[K’ evaluates to false
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:19:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KJoyReader::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (JoyReader::*)(double, double), JoyReader*>::type)[m[K’
+   19 |         timer_ = [01;31m[Kthis->create_wall_timer(std::chrono::milliseconds(10), std::bind(&JoyReader::_non_holonomic, this))[m[K;
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_wall_timer[m[K(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr, bool)[m[K’
+  241 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:241:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1663[m[K:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp: In substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::[01;32m[Kcreate_wall_timer[m[K(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr, bool) [35m[K[with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (JoyReader::*(JoyReader*))(double, double)>][m[K[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:19:41:[m[K   required from here
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:110:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+  110 | [01;31m[KNode[m[K::create_wall_timer(
+      | [01;31m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:110:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:110:1:[m[K [01;36m[Knote: [m[Kinvalid template non-type parameter
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[K_non_holonomic[m[K(double, double)[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:30:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_i[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 |     void _non_holonomic([01;35m[Kdouble axes_i[m[K,double axes_ii)
+      |                         [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:30:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_ii[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 |     void _non_holonomic(double axes_i,[01;35m[Kdouble axes_ii[m[K)
+      |                                       [01;35m[K~~~~~~~^~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[K_holonomic[m[K(...)[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:34:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 |     void _holonomic([01;35m[Kdouble axes_1[m[K,double axes_1)
+      |                     [01;35m[K~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

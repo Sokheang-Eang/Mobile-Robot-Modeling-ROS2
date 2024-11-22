@@ -1,0 +1,15 @@
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:30:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   30 |     void _non_holonomic(double axes_i,double axes_ii[01;31m[K)[m[K
+      |                                                     [01;31m[K^[m[K
+      |                                                      [32m[K;[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In constructor ‘[01m[KJoyReader::[01;32m[KJoyReader[m[K()[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:15:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid JoyReader::[01;32m[K_non_holonomic[m[K(double, double)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   15 |         [01;31m[K_non_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/non_holonomic", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_holonomic[m[K’ was not declared in this scope; did you mean ‘[01m[K_non_holonomic[m[K’?
+   17 |         [01;31m[K_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/holonomic", 10);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[K_non_holonomic[m[K
+gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

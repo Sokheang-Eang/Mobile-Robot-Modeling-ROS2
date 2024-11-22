@@ -1,0 +1,16 @@
+/home/astrox/robot_model/install/robot_controller/lib/robot_controller/ps2_controller
+/home/astrox/robot_model/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+/home/astrox/robot_model/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/path.sh
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/environment/path.dsv
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.bash
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.sh
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.zsh
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/local_setup.dsv
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/package.dsv
+/home/astrox/robot_model/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+/home/astrox/robot_model/install/robot_controller/share/robot_controller/package.xml

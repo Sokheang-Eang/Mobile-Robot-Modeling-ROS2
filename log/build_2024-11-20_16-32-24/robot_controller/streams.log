@@ -1,0 +1,14 @@
+[0.013s] Invoking command in '/home/astrox/robot_model/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[2.260s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[Kholonomic_robot[m[K(double, double)[m[K’:
+[2.260s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry[m[K’ has not been declared
+[2.260s]    32 |         [01;31m[Kgeometry[m[K::msg::Twist robot_holonomic;
+[2.260s]       |         [01;31m[K^~~~~~~~[m[K
+[2.267s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_holonomic[m[K’ was not declared in this scope; did you mean ‘[01m[K_non_holonomic[m[K’?
+[2.267s]    33 |         [01;31m[Krobot_holonomic[m[K.linear.x = speed_x;
+[2.267s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.267s]       |         [32m[K_non_holonomic[m[K
+[4.503s] gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+[4.503s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+[4.503s] gmake: *** [Makefile:146: all] Error 2
+[4.504s] Invoked command in '/home/astrox/robot_model/build/robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12

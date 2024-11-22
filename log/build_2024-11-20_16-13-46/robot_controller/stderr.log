@@ -1,0 +1,31 @@
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In constructor ‘[01m[KJoyReader::[01;32m[KJoyReader[m[K()[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:15:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid JoyReader::[01;32m[Knon_holonomic[m[K(double, double)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   15 |         [01;31m[Knon_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/non_holonomic", 10);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:17:9:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kvoid JoyReader::[01;32m[Kholonomic[m[K(double, double)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   17 |         [01;31m[Kholonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/holonomic", 10);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   19 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&RobotTracking::computeTracking, this));
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:19:84:[m[K [01;31m[Kerror: [m[K‘[01m[KRobotTracking[m[K’ has not been declared
+   19 |         timer_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&[01;31m[KRobotTracking[m[K::computeTracking, this));
+      |                                                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[Knon_holonomic[m[K(double, double)[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:30:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_i[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 |     void non_holonomic([01;35m[Kdouble axes_i[m[K,double axes_ii)
+      |                        [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:30:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_ii[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   30 |     void non_holonomic(double axes_i,[01;35m[Kdouble axes_ii[m[K)
+      |                                      [01;35m[K~~~~~~~^~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[Kholonomic[m[K(double, double)[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:34:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_i[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 |     void holonomic([01;35m[Kdouble axes_i[m[K,double axes_ii)
+      |                    [01;35m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:34:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kaxes_ii[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   34 |     void holonomic(double axes_i,[01;35m[Kdouble axes_ii[m[K)
+      |                                  [01;35m[K~~~~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

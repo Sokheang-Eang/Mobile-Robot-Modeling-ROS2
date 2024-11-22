@@ -1,0 +1,12 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[Kholonomic_robot[m[K(double, double)[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry[m[K’ has not been declared
+   32 |         [01;31m[Kgeometry[m[K::msg::Twist robot_holonomic;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_holonomic[m[K’ was not declared in this scope; did you mean ‘[01m[K_non_holonomic[m[K’?
+   33 |         [01;31m[Krobot_holonomic[m[K.linear.x = speed_x;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[K_non_holonomic[m[K
+gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

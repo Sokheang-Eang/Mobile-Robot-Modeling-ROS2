@@ -1,0 +1,18 @@
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In member function ‘[01m[Kvoid JoyReader::[01;32m[Kjoy_callback[m[K(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:27:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KJoyReader::holonomic_robot(__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type&, __gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type&)[m[K’
+   27 |         [01;31m[Kholonomic_robot(msg->axes[1], msg->axes[3])[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid JoyReader::[01;32m[Kholonomic_robot[m[K(double, double, double)[m[K’
+   31 |     void [01;36m[Kholonomic_robot[m[K(double speed_x, double speed_y, double speed_theta)
+      |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:10:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:29:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KJoyReader::non_holonomic_robot(__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type&, __gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type&, __gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type&)[m[K’
+   29 |         [01;31m[Knon_holonomic_robot(msg->axes[1], msg->axes[0], msg->axes[3])[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:39:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid JoyReader::[01;32m[Knon_holonomic_robot[m[K(double, double)[m[K’
+   39 |     void [01;36m[Knon_holonomic_robot[m[K(double _linear, double _angular)
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:39:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

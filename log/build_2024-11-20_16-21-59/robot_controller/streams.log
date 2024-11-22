@@ -1,0 +1,43 @@
+[0.013s] Invoking command in '/home/astrox/robot_model/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[2.291s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[2.291s]    31 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Twist>::SharedPtr _non_holonomic;
+[2.291s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.291s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.291s]    31 |     rclcpp::Publisher<nav_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr _non_holonomic;
+[2.291s]       |                                           [01;31m[K^[m[K
+[2.291s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.292s]    31 |     rclcpp::Publisher<nav_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K _non_holonomic;
+[2.292s]       |                                              [01;31m[K^~~~~~~~~[m[K
+[2.292s]       |                                                       [32m[K;[m[K
+[2.293s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:56:[m[K [01;31m[Kerror: [m[K‘[01m[K_non_holonomic[m[K’ does not name a type
+[2.293s]    31 |     rclcpp::Publisher<nav_msgs::msg::Twist>::SharedPtr [01;31m[K_non_holonomic[m[K;
+[2.293s]       |                                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.299s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[2.300s]    32 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Twist>::SharedPtr _holonomic;
+[2.300s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.300s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.300s]    32 |     rclcpp::Publisher<nav_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr _holonomic;
+[2.300s]       |                                           [01;31m[K^[m[K
+[2.300s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.300s]    32 |     rclcpp::Publisher<nav_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K _holonomic;
+[2.300s]       |                                              [01;31m[K^~~~~~~~~[m[K
+[2.300s]       |                                                       [32m[K;[m[K
+[2.300s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:46:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint JoyReader::SharedPtr[m[K’
+[2.301s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:31:46:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint JoyReader::SharedPtr[m[K’
+[2.301s]    31 |     rclcpp::Publisher<nav_msgs::msg::Twist>::[01;36m[KSharedPtr[m[K _non_holonomic;
+[2.301s]       |                                              [01;36m[K^~~~~~~~~[m[K
+[2.301s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:32:56:[m[K [01;31m[Kerror: [m[K‘[01m[K_holonomic[m[K’ does not name a type
+[2.301s]    32 |     rclcpp::Publisher<nav_msgs::msg::Twist>::SharedPtr [01;31m[K_holonomic[m[K;
+[2.301s]       |                                                        [01;31m[K^~~~~~~~~~[m[K
+[2.322s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:[m[K In constructor ‘[01m[KJoyReader::[01;32m[KJoyReader[m[K()[m[K’:
+[2.322s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:15:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_non_holonomic[m[K’ was not declared in this scope
+[2.322s]    15 |         [01;31m[K_non_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/non_holonomic", 10);
+[2.322s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.333s] [01m[K/home/astrox/robot_model/src/robot_controller/src/read_controller.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_holonomic[m[K’ was not declared in this scope
+[2.333s]    17 |         [01;31m[K_holonomic[m[K = this->create_publisher<geometry_msgs::msg::Twist>("speed/holonomic", 10);
+[2.333s]       |         [01;31m[K^~~~~~~~~~[m[K
+[4.566s] gmake[2]: *** [CMakeFiles/ps2_controller.dir/build.make:76: CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o] Error 1
+[4.567s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ps2_controller.dir/all] Error 2
+[4.567s] gmake: *** [Makefile:146: all] Error 2
+[4.568s] Invoked command in '/home/astrox/robot_model/build/robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12

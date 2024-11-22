@@ -1,0 +1,10 @@
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/uninstall.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/robot_controller_uninstall.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/ps2_controller.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/test.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/edit_cache.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/rebuild_cache.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/list_install_components.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/install.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/install/local.dir
+/home/astrox/robot_model/build/robot_controller/CMakeFiles/install/strip.dir
