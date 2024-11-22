@@ -12,6 +12,8 @@ public:
             "/joy", 10,
             std::bind(&JoyReader::joy_callback, this, std::placeholders::_1));
 
+        speed2robot = this->create_publisher<geometry_msgs::msg::Twist>("speed/robot", 10);
+
         _non_holonomic = this->create_publisher<geometry_msgs::msg::Twist>("speed/non_holonomic", 10);
 
         _holonomic = this->create_publisher<geometry_msgs::msg::Twist>("speed/holonomic", 10);
@@ -27,13 +29,14 @@ private:
         holonomic_robot(msg->axes[1], msg->axes[0], msg->axes[3]);
         // 4wd robot
         non_holonomic_robot(msg->axes[1], msg->axes[3]);
+        joy_robot(msg->axes[1], msg->axes[3]);
     }
     void holonomic_robot(double speed_x, double speed_y, double speed_theta)
     {
         geometry_msgs::msg::Twist robot_holonomic;
         robot_holonomic.linear.x = speed_x / 5000;
         robot_holonomic.linear.y = speed_y / 5000;
-        robot_holonomic.angular.z = speed_theta/5000;
+        robot_holonomic.angular.z = speed_theta / 5000;
         _holonomic->publish(robot_holonomic);
     }
     void non_holonomic_robot(double _linear, double _angular)
@@ -43,9 +46,17 @@ private:
         robot_non_holonomic.angular.z = _angular / 5000.00;
         _non_holonomic->publish(robot_non_holonomic);
     }
+    void joy_robot(double linear_x, double linear_y)
+    {
+        geometry_msgs::msg::Twist robot;
+        robot.linear.x = linear_x;
+        robot.linear.y = linear_y;
+        speed2robot->publish(robot);
+    }
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr joy_subscription_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr _non_holonomic;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr _holonomic;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr speed2robot;
 };
 
 int main(int argc, char **argv)

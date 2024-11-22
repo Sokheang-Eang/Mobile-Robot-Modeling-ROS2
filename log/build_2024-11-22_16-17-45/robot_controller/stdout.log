@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ps2_controller[0m
+[100%] Built target ps2_controller

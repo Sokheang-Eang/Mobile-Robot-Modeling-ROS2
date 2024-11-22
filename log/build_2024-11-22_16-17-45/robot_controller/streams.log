@@ -1,0 +1,4 @@
+[0.019s] Invoking command in '/home/astrox/robot_model/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_controller -- -j12 -l12
+[0.095s] [ 50%] [32mBuilding CXX object CMakeFiles/ps2_controller.dir/src/read_controller.cpp.o[0m
+[7.832s] [100%] [32m[1mLinking CXX executable ps2_controller[0m
+[8.119s] [100%] Built target ps2_controller

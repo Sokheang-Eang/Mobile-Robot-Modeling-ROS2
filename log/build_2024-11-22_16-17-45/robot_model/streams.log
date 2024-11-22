@@ -1,0 +1,12 @@
+[0.012s] Invoking command in '/home/astrox/robot_model/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_model -- -j12 -l12
+[0.083s] [ 75%] [32mBuilding CXX object CMakeFiles/holonomic.dir/src/holonomic.cpp.o[0m
+[0.083s] [ 75%] Built target non_holonomic
+[2.573s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:[m[K In member function ‘[01m[Kvoid OdometryPublisher::[01;32m[Kpublish[m[K()[m[K’:
+[2.573s] [01m[K/home/astrox/robot_model/src/robot_model/src/holonomic.cpp:80:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kupublish[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish[m[K’?
+[2.573s]    80 |         odom_pub_-[01;31m[Kupublish[m[K(odom);
+[2.573s]       |                   [01;31m[K^~~~~~~~[m[K
+[2.573s]       |                   [32m[Kpublish[m[K
+[4.998s] gmake[2]: *** [CMakeFiles/holonomic.dir/build.make:76: CMakeFiles/holonomic.dir/src/holonomic.cpp.o] Error 1
+[4.998s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/holonomic.dir/all] Error 2
+[4.998s] gmake: *** [Makefile:146: all] Error 2
+[4.999s] Invoked command in '/home/astrox/robot_model/build/robot_model' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_model -- -j12 -l12

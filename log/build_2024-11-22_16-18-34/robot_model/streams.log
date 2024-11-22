@@ -1,0 +1,27 @@
+[0.010s] Invoking command in '/home/astrox/robot_model/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_model -- -j12 -l12
+[0.056s] [ 50%] Built target non_holonomic
+[0.060s] [ 75%] [32mBuilding CXX object CMakeFiles/holonomic.dir/src/holonomic.cpp.o[0m
+[8.998s] [100%] [32m[1mLinking CXX executable holonomic[0m
+[9.384s] [100%] Built target holonomic
+[9.395s] Invoked command in '/home/astrox/robot_model/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/astrox/robot_model/build/robot_model -- -j12 -l12
+[9.420s] Invoking command in '/home/astrox/robot_model/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/astrox/robot_model/build/robot_model
+[9.428s] -- Install configuration: ""
+[9.428s] -- Installing: /home/astrox/robot_model/install/robot_model/lib/robot_model/holonomic
+[9.432s] -- Set non-toolchain portion of runtime path of "/home/astrox/robot_model/install/robot_model/lib/robot_model/holonomic" to ""
+[9.433s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/lib/robot_model/non_holonomic
+[9.433s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/environment/ament_prefix_path.sh
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/environment/ament_prefix_path.dsv
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/environment/path.sh
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/environment/path.dsv
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.bash
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.sh
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.zsh
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/local_setup.dsv
+[9.434s] -- Installing: /home/astrox/robot_model/install/robot_model/share/robot_model/package.dsv
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/ament_index/resource_index/packages/robot_model
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/cmake/robot_modelConfig.cmake
+[9.434s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/cmake/robot_modelConfig-version.cmake
+[9.435s] -- Up-to-date: /home/astrox/robot_model/install/robot_model/share/robot_model/package.xml
+[9.436s] Invoked command in '/home/astrox/robot_model/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/astrox/robot_model/build/robot_model
